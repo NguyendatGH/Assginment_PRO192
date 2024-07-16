@@ -1,0 +1,10 @@
+B001  | The Great Gatsby         | F. Scott Fitzgerald      | honor                    | 10/04/1925               | 5              | 10.99          | 0.55           |
+B002  | 1984                     | George Orwell            | comic                    | 08/06/1949               | 12             | 8.99           | 0.45           |
+B003  | To Kill a Mockingbird    | Harper Lee               | honor                    | 11/07/1960               | 8              | 7.99           | 0.16           |
+B004  | The Catcher in the Rye   | J.D. Salinger            | honor                    | 16/07/1951               | 3              | 6.99           | 0.14           |
+B005  | Brave New World          | Aldous Huxley            | comic                    | 30/08/1932               | 7              | 9.99           | 0.50           |
+B006  | The Hobbit               | J.R.R. Tolkien           | fairytail                | 21/09/1937               | 15             | 10.49          | 0.52           |
+B007  | War and Peace            | Leo Tolstoy              | honor                    | 01/01/1869               | 6              | 12.99          | 0.65           |
+B008  | Harry Potter             | Stone.J.K. Rowling       | fantasy                  | 26/06/1997               | 10             | 11.99          | 0.60           |
+B009  | The Lord of the Rings    | J.R.R. Tolkien           | fantasy                  | 29/07/1954               | 9              | 13.49          | 0.67           |
+B010  | Pride and Prejudice      | Jane Austen              | romance                  | 28/01/1813               | 4              | 5.99           | 0.12           |
