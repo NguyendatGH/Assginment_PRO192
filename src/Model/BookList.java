@@ -119,6 +119,30 @@ public class BookList {
         return result;
     }
 
+    public ArrayList<Book> findBookByPrice(double price, int o) {
+        ArrayList<Book> result = new ArrayList<>();
+        if (o == 1) {
+            for (Book b : listOfBook) {
+                if (b.getPrice() < price) {
+                    result.add(b);
+                }
+            }
+        } else if (o == 2) {
+            for (Book b : listOfBook) {
+                if (b.getPrice() > price) {
+                    result.add(b);
+                }
+            }
+        } else {
+            for (Book b : listOfBook) {
+                if (b.getPrice().equals(price)) {
+                    result.add(b);
+                }
+            }
+        }
+        return result;
+    }
+
     public boolean removeBook(Predicate<Book> b) {
         return listOfBook.removeIf(b);
     }

@@ -10,7 +10,7 @@ import view.Menu;
 
 public class BookApp extends Menu<String> {
 
-    static String[] menu = {"Display all book", "Add new book", "Find book", "Remove book", "Sort book", "Update field","Backup data" ,"Quit"};
+    static String[] menu = {"Display all book", "Add new book", "Find book", "Remove book", "Sort book", "Update field", "Backup data", "Quit"};
     BookList list = new BookList();
 
     public BookApp() {
@@ -44,7 +44,7 @@ public class BookApp extends Menu<String> {
                 UpdateField();
                 break;
             }
-            case 7:{
+            case 7: {
                 list.backUpData("backup.txt");
                 break;
             }
@@ -132,6 +132,7 @@ public class BookApp extends Menu<String> {
 
                     case 3: {
                         String input = Utils.getValue("Enter year: ");
+
                         if (Utils.validDate(input) == true) {
                             try {
                                 SimpleDateFormat date = new SimpleDateFormat();
@@ -165,15 +166,18 @@ public class BookApp extends Menu<String> {
                         int option = Utils.checkInt("+Enter your option: ");
                         switch (option) {
                             case 1: {
-                                result = list.findBook(p -> p.getPrice() < input);
+                                result = list.findBookByPrice(input, 1);
+                                list.printList(result);
                                 break;
                             }
                             case 2: {
-                                result = list.findBook(p -> p.getPrice() > input);
+                                result = list.findBookByPrice(input, 2);
+                                list.printList(result);
                                 break;
                             }
                             case 3: {
-                                result = list.findBook(p -> p.getPrice() == input);
+                                result = list.findBookByPrice(input, 3);
+                                list.printList(result);
                                 break;
                             }
                             default: {
@@ -181,9 +185,8 @@ public class BookApp extends Menu<String> {
                                 return;
                             }
                         }
-                        list.printList(result);
+                        break;
                     }
-
                 }
             }
         };
