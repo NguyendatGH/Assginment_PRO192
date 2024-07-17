@@ -131,11 +131,11 @@ public class BookApp extends Menu<String> {
                     }
 
                     case 3: {
-                        String input = Utils.getValue("Enter year: ");
+                        String input = Utils.getValue("Enter publish date: ");
 
                         if (Utils.validDate(input) == true) {
                             try {
-                                SimpleDateFormat date = new SimpleDateFormat();
+                                SimpleDateFormat date = new SimpleDateFormat("dd/mm/yyyy");
                                 Date input_format = date.parse(input);
 
                                 int option = Utils.checkInt("Press 1 to search before & 2 to search after that year: ");
@@ -219,7 +219,7 @@ public class BookApp extends Menu<String> {
                         String input = Utils.getValue("Enter year: ");
                         if (Utils.validDate(input) == true) {
                             try {
-                                SimpleDateFormat date = new SimpleDateFormat();
+                                SimpleDateFormat date = new SimpleDateFormat("dd/mm/yyyy");
                                 Date input_format = date.parse(input);
 
                                 int option = Utils.checkInt("Press 1 to search before & 2 to search after that year: ");

@@ -68,15 +68,13 @@ public class Utils {
 
     public static boolean validDate(String Dob) {
         SimpleDateFormat date = new SimpleDateFormat("dd/MM/yyyy");
-        date.setLenient(false); // setLenient là phương thức dùng để kiểm tra ngày có định dạng đúng hay không
         try {
             date.parse(Dob);
         } catch (Exception e) {
-            System.out.println("Invalid date format");
+            System.err.print("Invalid date format");
             return false;
         }
         return true;
     }
 
-   
 }

@@ -1,4 +1,4 @@
-B001  | The Great Gatsby         | F. Scott Fitzgerald      | honor                    | 10/04/1925               | 5              | 10.99          | 0.55           |
+B001  | The Great Gatsby         | F. Scott Fitzgerald      | honor                    | 10/04/1925               | 24             | 9.00           | 0.45           |
 B002  | 1984                     | George Orwell            | comic                    | 08/06/1949               | 12             | 8.99           | 0.45           |
 B003  | To Kill a Mockingbird    | Harper Lee               | honor                    | 11/07/1960               | 8              | 7.99           | 0.16           |
 B004  | The Catcher in the Rye   | J.D. Salinger            | honor                    | 16/07/1951               | 3              | 6.99           | 0.14           |
